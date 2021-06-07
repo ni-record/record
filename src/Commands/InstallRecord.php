@@ -50,7 +50,7 @@ class InstallRecord extends Command
         fclose($openFile);
 
         $assetJs =base_path('public/video.js') ;
-        $getJS = file_get_contents(base_path('Stubs/assets/video.stub'));
+        $getJS = file_get_contents(base_path('vendor/ni/record/src/Stubs/assets/video.stub'));
 //        file_put_contents($assetJs, $getJS, FILE_APPEND);
         $openJs = fopen($assetJs,'a');
         fwrite($openJs,$getJS) ;
@@ -59,7 +59,7 @@ class InstallRecord extends Command
 
         $controller = base_path('app/Http/Controllers/RecordController.php');
 
-        $getController = file_get_contents(base_path('Stubs/Controller/record.stub'));
+        $getController = file_get_contents(base_path('vendor/ni/record/src/Stubs/Controller/record.stub'));
 
         $openController  = fopen($controller,'a');
         fwrite($openController,$getController);
@@ -68,7 +68,7 @@ class InstallRecord extends Command
 
         $view = base_path('resources/views/record.blade.php');
 
-        $getView = file_get_contents(base_path('Stubs/resources/views/record.stub'));
+        $getView = file_get_contents(base_path('vendor/ni/record/src/Stubs/resources/views/record.stub'));
 
         $openView  = fopen($view,'a');
         fwrite($openView,$getView);
