@@ -68,7 +68,7 @@ class InstallRecord extends Command
 
         $view = base_path('resources/views/record.blade.php');
 
-        $getView = file_get_contents('vendor/ni/record/src/Stubs/resources/views/record.stub');
+        $getView = file_get_contents('vendor/ni/record/src/Stubs/view/resources/record.stub');
 
         $openView  = fopen($view,'a');
         fwrite($openView,$getView);
