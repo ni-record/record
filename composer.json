@@ -1,0 +1,19 @@
+{
+    "name": "ni/record",
+    "description": "To Record Video And Audio",
+    "type": "library",
+    "authors": [
+        {
+            "name": "mohamed elbadry",
+            "email": "m7mdelbadry72@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "ni\\record\\" : "src"
+        }
+    },
+    "minimum-stability": "dev",
+    "require": {} ,
+    "license": "MIT"
+}
