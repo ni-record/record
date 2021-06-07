@@ -80,7 +80,7 @@ function makeLink(){
     const formData = new FormData();
     formData.append('_token',  $('meta[name="csrf-token"]').attr('content'));
     formData.append('video', blob);
-    fetch('/save', {
+    fetch(''/screen/save', {
         method: 'POST',
         body: formData
     })

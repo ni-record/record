@@ -10,7 +10,7 @@ class RecordController extends Controller
         return view('record');
     }
 
-    public function Store(){
+    public function Store(Request $request){
         $path =  \Storage::disk('public')->put('videos',$request->video);
         $url = \Storage::disk('public')->url($path);
         return $url;
