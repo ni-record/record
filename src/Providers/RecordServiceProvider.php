@@ -1,7 +1,7 @@
 <?php
 
 namespace ni\record\Providers ;
-use NI\record\Commands\InstallRecord;
+use ni\record\Commands\InstallRecord;
 
 
 use Illuminate\Support\ServiceProvider;
